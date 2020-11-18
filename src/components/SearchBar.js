@@ -15,7 +15,7 @@ function SearchBar() {
     const query = e => {
         e.preventDefault()
 
-        axios.get('http://hn.algolia.com/api/v1/search?query=' + searchTerm + "&tags=story")
+        axios.get('https://hn.algolia.com/api/v1/search?query=' + searchTerm + "&tags=story")
             .then((response) => {
 
                 dispatch(searchResults(response.data))
