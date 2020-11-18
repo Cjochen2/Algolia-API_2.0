@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Algolia-API_2.0/static/css/main.e6345ead.chunk.css",
-    "main.js": "/Algolia-API_2.0/static/js/main.0f928db0.chunk.js",
-    "main.js.map": "/Algolia-API_2.0/static/js/main.0f928db0.chunk.js.map",
+    "main.js": "/Algolia-API_2.0/static/js/main.c0139468.chunk.js",
+    "main.js.map": "/Algolia-API_2.0/static/js/main.c0139468.chunk.js.map",
     "runtime-main.js": "/Algolia-API_2.0/static/js/runtime-main.455cabb2.js",
     "runtime-main.js.map": "/Algolia-API_2.0/static/js/runtime-main.455cabb2.js.map",
     "static/js/2.457cbff9.chunk.js": "/Algolia-API_2.0/static/js/2.457cbff9.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.455cabb2.js",
     "static/js/2.457cbff9.chunk.js",
     "static/css/main.e6345ead.chunk.css",
-    "static/js/main.0f928db0.chunk.js"
+    "static/js/main.c0139468.chunk.js"
   ]
 }
