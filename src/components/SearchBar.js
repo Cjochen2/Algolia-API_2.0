@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import { searchResults, userHistory } from "../actions";
+import { useDispatch } from 'react-redux';
+
 
 function SearchBar() {
     const [searchTerm, setSearchTerm] = useState('');
+    const dispatch = useDispatch();
 
     const handleChange = event => {
         setSearchTerm(event.target.value);
@@ -14,26 +18,28 @@ function SearchBar() {
         axios.get('http://hn.algolia.com/api/v1/search?query=' + searchTerm + "&tags=story")
             .then((response) => {
 
-                //results(response.data.items);
-                //setSearchTerm('');
-                //console.log(searchTerm)
+                dispatch(searchResults(response.data))
+                console.log(searchTerm)
+                dispatch(userHistory(searchTerm))
+                setSearchTerm('');
 
             })
     }
 
     return (
         <div className='searchBar'>
-            <form>
+            <form onSubmit={query}>
                 <input
                     type="text"
-                    placeholder="Search"
+                    name='search'
+                    placeholder="Search Algolia"
                     value={searchTerm}
                     onChange={handleChange}
                 />
-                <button type='button' className='btn' onClick={query}>Search</button>
+                <button type='submit' className='btn'>Search</button>
             </form>
         </div>
     )
 };
 
-export default SearchBar
+export default SearchBar;
