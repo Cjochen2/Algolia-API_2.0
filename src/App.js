@@ -4,12 +4,13 @@ import UserHistory from './components/UserHistory'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       <SearchBar />
-       <SearchResults />
-       <UserHistory />
-      </header>
+    <div className="App container">
+      <h1 className="App-header row justify-content-center">
+        Algoia Api React-Redux App
+      </h1>
+      <SearchBar />
+      <SearchResults />
+      <UserHistory />
     </div>
   )
 };

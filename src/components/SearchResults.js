@@ -6,8 +6,8 @@ const SearchResults = () => {
     const searchData = useSelector(state => state.results)
 
     return (
-        <div>
-            {!searchData.hits ? "No Results to Display" : searchData.hits.map((info, i) => <ResultsCard article={info} key={i+1} />)}
+        <div className='row'>
+            {!searchData.hits ? "No Results to Display" : searchData.hits.map((info, i) => <ResultsCard article={info} key={i}/>)}
         </div>
     )
 };

@@ -27,7 +27,7 @@ function SearchBar() {
     }
 
     return (
-        <div className='searchBar'>
+        <div className='searchBar row justify-content-center'>
             <form onSubmit={query}>
                 <input
                     type="text"
@@ -36,7 +36,7 @@ function SearchBar() {
                     value={searchTerm}
                     onChange={handleChange}
                 />
-                <button type='submit' className='btn'>Search</button>
+                <button type='submit' className='btn-info'>Search</button>
             </form>
         </div>
     )
