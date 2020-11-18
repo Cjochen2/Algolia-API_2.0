@@ -7,7 +7,7 @@ const SearchResults = () => {
 
     return (
         <div className='row'>
-            {!searchData.hits ? "No Results to Display" : searchData.hits.map((info, i) => <ResultsCard article={info} key={i}/>)}
+            {!searchData.hits ? "No Results to Display" : searchData.hits.map((info, i) => <ResultsCard article={info} key={i} />)}
         </div>
     )
 };

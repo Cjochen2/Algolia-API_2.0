@@ -9,8 +9,8 @@ export const searchResults = (results) => {
 };
 
 export const userHistory = (query) => {
-    return {
-        type: USER_HISTORY,
-        query
-    }
+  return {
+    type: USER_HISTORY,
+    query
+  }
 };
